@@ -4,7 +4,7 @@
 #include <time.h>
 #include <openssl/sha.h>
 
-#define DIFFICULTY 4  // Number of leading zeros required
+#define DIFFICULTY 4  
 
 // Function to calculate SHA-256 hash
 void calculate_hash(char *input, unsigned char output[SHA256_DIGEST_LENGTH]) {
