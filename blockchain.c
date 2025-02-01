@@ -6,7 +6,7 @@
 
 #define MAX_TRANSACTIONS 5
 #define HASH_SIZE 65
-#define DIFFICULTY 4 // Number of leading zeros required
+#define DIFFICULTY 4 
 
 // Block structure
 typedef struct Block {
