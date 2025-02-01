@@ -4,12 +4,12 @@
 #include <time.h>
 #include <stdint.h>
 
-#define DIFFICULTY 4  // Number of leading zeros required
-#define MAX_BLOCKS 100 // Maximum number of blocks in the blockchain
+#define DIFFICULTY 4  
+#define MAX_BLOCKS 100 
 
 typedef struct Block {
     int index;
-    char previous_hash[65]; // SHA-256 hash in hex
+    char previous_hash[65]; 
     long timestamp;
     char data[256];
     int nonce;
@@ -21,8 +21,6 @@ int blockchain_length = 0;
 
 // Simple SHA-256 hash function (placeholder)
 void sha256(const char *input, size_t len, unsigned char output[32]) {
-    // Placeholder for actual SHA-256 implementation
-    // You can replace this with a proper implementation
 }
 
 // Function to calculate hash for a block
@@ -84,7 +82,7 @@ int verify_blockchain() {
             return 0; // Invalid hash
         }
     }
-    return 1; // Blockchain is valid
+    return 1;
 }
 
 int main() {
