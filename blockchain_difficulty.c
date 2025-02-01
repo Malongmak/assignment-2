@@ -6,16 +6,16 @@
 
 #define MAX_TRANSACTIONS 5
 #define HASH_SIZE 65
-#define MAX_NONCE 1000000000  // Limit nonce attempts to prevent infinite loop
+#define MAX_NONCE 1000000000  
 
 // Adjustable difficulty level
-int DIFFICULTY = 4; // Default difficulty (can be changed dynamically)
+int DIFFICULTY = 4; 
 
 // Block structure
 typedef struct Block {
     int index;
     time_t timestamp;
-    char transactions[MAX_TRANSACTIONS][256]; // Simplified transactions
+    char transactions[MAX_TRANSACTIONS][256]; 
     char previous_hash[HASH_SIZE];
     int nonce;
     char hash[HASH_SIZE];
